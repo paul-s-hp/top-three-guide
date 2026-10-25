@@ -160,17 +160,17 @@
       <p class="subhead">The Home Service Owner's Guide to a Google Business Profile That Brings In Calls</p>
       <p class="opening">When a homeowner needs what you do, they search on their phone. Google answers with a map and three businesses. Those three get the calls. Everyone else waits on a list most people never scroll to.</p>
       <div class="form-card">
-        <form class="lead-form" novalidate>
+        <form class="lead-form" action="https://app.kit.com/forms/10095349/subscriptions" method="post">
           <label for="hero-email">Email</label>
-          <input id="hero-email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+          <input id="hero-email" type="email" name="email_address" autocomplete="email" required placeholder="you@example.com">
           <div class="row">
             <div>
               <label for="hero-first">First name</label>
-              <input id="hero-first" type="text" name="first_name" autocomplete="given-name" required>
+              <input id="hero-first" type="text" name="fields[first_name]" autocomplete="given-name" required>
             </div>
             <div>
               <label for="hero-last">Last name</label>
-              <input id="hero-last" type="text" name="last_name" autocomplete="family-name" required>
+              <input id="hero-last" type="text" name="fields[last_name]" autocomplete="family-name" required>
             </div>
           </div>
           <button type="submit">Send Me the Guide</button>
@@ -316,17 +316,17 @@
   <div class="bottom">
     <h2>Get the guide</h2>
     <div class="form-card">
-      <form class="lead-form" novalidate>
+      <form class="lead-form" action="https://app.kit.com/forms/10095349/subscriptions" method="post">
         <label for="bottom-email">Email</label>
-        <input id="bottom-email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+        <input id="bottom-email" type="email" name="email_address" autocomplete="email" required placeholder="you@example.com">
         <div class="row">
           <div>
             <label for="bottom-first">First name</label>
-            <input id="bottom-first" type="text" name="first_name" autocomplete="given-name" required>
+            <input id="bottom-first" type="text" name="fields[first_name]" autocomplete="given-name" required>
           </div>
           <div>
             <label for="bottom-last">Last name</label>
-            <input id="bottom-last" type="text" name="last_name" autocomplete="family-name" required>
+            <input id="bottom-last" type="text" name="fields[last_name]" autocomplete="family-name" required>
           </div>
         </div>
         <button type="submit">Send Me the Guide</button>
@@ -347,17 +347,19 @@
 </footer>
 
 <script>
-  // Preview behavior: validate the form and swap in the thank-you panel.
-  // Live submissions will post to the list provider when it is wired up.
-  document.querySelectorAll('.lead-form').forEach(function (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!form.checkValidity()) { form.reportValidity(); return; }
-      var card = form.closest('.form-card');
-      form.style.display = 'none';
-      card.querySelector('.thanks').style.display = 'block';
-    });
-  });
+  // The forms post to Kit. Kit returns the visitor to this page with
+  // ?thanks=1 after a signup; swap the forms for the thank-you panel then.
+  (function () {
+    if (new URLSearchParams(window.location.search).get('thanks') === '1') {
+      document.querySelectorAll('.lead-form').forEach(function (form) {
+        var card = form.closest('.form-card');
+        form.style.display = 'none';
+        card.querySelector('.thanks').style.display = 'block';
+      });
+      var first = document.querySelector('.form-card');
+      if (first) { first.scrollIntoView(); }
+    }
+  })();
 </script>
 </body>
 </html>
