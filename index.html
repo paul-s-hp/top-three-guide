@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Top Three Get the Calls | Hollow &amp; Peak</title>
+<meta name="description" content="The Home Service Owner's Guide to a Google Business Profile That Brings In Calls. A free guide from Hollow & Peak.">
+<link rel="icon" type="image/png" href="https://muse.ai/files/1314021691801900/1593206625387015/clsfytrqthpgah88ok8if7n6/cover.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#f7f4e9;
+    --paper:#fffdf4;
+    --ink:#2b3324;
+    --green-deep:#1d3d22;
+    --green:#2e5b34;
+    --accent:#57a639;
+    --accent-dark:#478a2e;
+    --border:#e0dbc2;
+    --panel:#123118;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+    font-size:19px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{font-family:"Fraunces",Georgia,serif;color:var(--green-deep);font-weight:600;line-height:1.12}
+  img{display:block;max-width:100%;height:auto}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:56px 0 64px}
+  .hero-grid{display:block}
+  .kicker{
+    font-family:"Source Serif 4",Georgia,serif;
+    font-size:15px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--green);font-weight:600;margin-bottom:18px;
+  }
+  .hero h1{font-size:clamp(44px,6.2vw,76px);font-weight:700;margin-bottom:20px}
+  .slap{font-size:clamp(20px,2.4vw,25px);line-height:1.45;color:var(--green-deep);font-weight:600;margin-bottom:26px}
+  .slap span{display:block}
+  .subhead{font-size:clamp(20px,2.2vw,24px);font-weight:600;color:var(--ink);margin-bottom:16px}
+  .opening{max-width:34em;margin-bottom:30px}
+  .cover{
+    width:min(85%,340px);margin:6px auto 30px;
+    border-radius:6px;
+    box-shadow:0 24px 48px rgba(18,49,24,.28),0 4px 12px rgba(18,49,24,.18);
+  }
+  .form-card{
+    background:var(--paper);border:1px solid var(--border);border-radius:var(--radius);
+    padding:22px;box-shadow:0 10px 30px rgba(18,49,24,.08);
+  }
+  .lead-form label{display:block;font-size:14px;font-weight:600;letter-spacing:.04em;color:var(--green-deep);margin-bottom:6px}
+  .lead-form input{
+    width:100%;font:inherit;font-size:17px;color:var(--ink);
+    background:#fff;border:1px solid #cfc9a8;border-radius:9px;
+    padding:12px 14px;margin-bottom:16px;
+  }
+  .lead-form input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+  .lead-form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .lead-form button{
+    width:100%;font:inherit;font-size:19px;font-weight:600;color:#fff;
+    background:var(--accent);border:none;border-radius:999px;
+    padding:15px 22px;cursor:pointer;transition:background .15s ease;
+  }
+  .lead-form button:hover{background:var(--accent-dark)}
+  .thanks{display:none;padding:10px 2px 14px}
+  .thanks h3{font-size:24px;margin-bottom:8px}
+  .thanks p{font-size:17px}
+  @media (max-width:480px){.lead-form .row{grid-template-columns:1fr}}
+  .smallprint{font-size:14.5px;line-height:1.55;color:#5a6350;margin-top:14px}
+
+  @media (min-width:900px){
+    .hero{padding:72px 0 84px}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);column-gap:56px;align-items:start}
+    .cover{width:100%;max-width:430px;margin:8px 0 0 auto}
+  }
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:52px 0}
+  .split{display:block}
+  .split .photo{
+    border-radius:var(--radius);overflow:hidden;margin-bottom:26px;
+    box-shadow:0 14px 34px rgba(18,49,24,.16);
+  }
+  .split .photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+  .split h2{font-size:clamp(32px,4vw,46px);margin-bottom:18px}
+  .split p{margin-bottom:16px;max-width:36em}
+  @media (min-width:900px){
+    section{padding:64px 0}
+    .split{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;align-items:center}
+    .split .photo{margin-bottom:0}
+    .split.flip .photo{order:2}
+    .split.flip .text{order:1}
+  }
+
+  /* ---------- CARDS ---------- */
+  .inside h2{text-align:center;font-size:clamp(32px,4vw,46px);margin-bottom:14px}
+  .inside .lede{text-align:center;max-width:40em;margin:0 auto 38px}
+  .cards{display:grid;grid-template-columns:1fr;gap:18px}
+  .card{
+    background:var(--paper);border:1px solid var(--border);border-radius:var(--radius);
+    padding:26px 24px;box-shadow:0 6px 18px rgba(18,49,24,.05);
+  }
+  .card svg{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:14px}
+  .card h3{font-size:22px;margin-bottom:8px}
+  .card p{font-size:16.5px;line-height:1.55;color:#414a38}
+  @media (min-width:640px){.cards{grid-template-columns:1fr 1fr}}
+  @media (min-width:1000px){.cards{grid-template-columns:repeat(4,1fr)}}
+
+  /* ---------- CENTERED TEXT BLOCKS ---------- */
+  .narrative{max-width:760px;margin:0 auto}
+  .narrative h2{font-size:clamp(32px,4vw,46px);margin-bottom:18px}
+  .narrative p{margin-bottom:16px}
+
+  /* ---------- Q&A ---------- */
+  .qa h2{font-size:clamp(32px,4vw,46px);margin-bottom:22px}
+  .qa-item{margin-bottom:26px}
+  .qa-item h3{font-size:21px;margin-bottom:6px}
+  .qa-item p{max-width:38em}
+  @media (min-width:900px){
+    .qa-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);column-gap:56px}
+  }
+
+  /* ---------- BOTTOM FORM ---------- */
+  .bottom{
+    background:var(--panel);border-radius:20px;
+    padding:52px 28px;margin:20px 0 64px;
+  }
+  .bottom h2{color:#f3efe0;text-align:center;font-size:clamp(32px,4vw,44px);margin-bottom:26px}
+  .bottom .form-card{max-width:640px;margin:0 auto}
+  .bottom .smallprint{color:#c9cfc0;text-align:center;max-width:640px;margin-left:auto;margin-right:auto}
+
+  footer{padding:0 0 48px;text-align:center}
+  footer .smallprint{margin-top:0}
+  footer .copy{font-size:15px;color:#5a6350;margin-top:8px}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="kicker">A free guide from Hollow &amp; Peak</p>
+      <h1>The Top Three Get the Calls</h1>
+      <p class="slap">
+        <span>Congratulations, you're on Google. You're just not in the three.</span>
+        <span>Google doesn't reward effort. Google rewards excellence.</span>
+      </p>
+      <img class="cover" src="https://muse.ai/files/1314021691801900/1593206625387015/clsfytrqthpgah88ok8if7n6/cover.jpg" alt="Cover of The Top Three Get the Calls, the home service owner's guide to a Google Business Profile that brings in calls" width="1500" height="2250" id="cover-mobile">
+      <p class="subhead">The Home Service Owner's Guide to a Google Business Profile That Brings In Calls</p>
+      <p class="opening">When a homeowner needs what you do, they search on their phone. Google answers with a map and three businesses. Those three get the calls. Everyone else waits on a list most people never scroll to.</p>
+      <div class="form-card">
+        <form class="lead-form" novalidate>
+          <label for="hero-email">Email</label>
+          <input id="hero-email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+          <div class="row">
+            <div>
+              <label for="hero-first">First name</label>
+              <input id="hero-first" type="text" name="first_name" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label for="hero-last">Last name</label>
+              <input id="hero-last" type="text" name="last_name" autocomplete="family-name" required>
+            </div>
+          </div>
+          <button type="submit">Send Me the Guide</button>
+        </form>
+        <div class="thanks" role="status">
+          <h3>Your guide is on its way.</h3>
+          <p>Before you search your own business to check where you show up, do it in a private (incognito) window, or through a VPN. A search on your everyday phone is personalized, and it will flatter your own listing.</p>
+        </div>
+      </div>
+      <p class="smallprint">We will email you the guide, plus occasional Google profile tips you can actually use. Unsubscribe anytime. We never sell your information.</p>
+    </div>
+    <div class="hero-cover">
+      <img class="cover" src="https://muse.ai/files/1314021691801900/1593206625387015/clsfytrqthpgah88ok8if7n6/cover.jpg" alt="Cover of The Top Three Get the Calls, the home service owner's guide to a Google Business Profile that brings in calls" width="1500" height="2250" id="cover-desktop">
+    </div>
+  </div>
+</header>
+<style>
+  /* Cover placement: one cover in the DOM flow for mobile, the side one for desktop */
+  .hero-cover{display:none}
+  @media (min-width:900px){
+    .hero-cover{display:block}
+    #cover-mobile{display:none}
+    .hero .cover{margin-top:8px}
+  }
+</style>
+
+<!-- ================= SECTION 2 ================= -->
+<section>
+  <div class="wrap split">
+    <div class="photo"><img src="https://muse.ai/files/1314021691801900/2067902757179409/wfhw9d72xumk0d7v61uu5p30/map-phone.jpg" alt="A homeowner searching Google Maps on a phone" loading="lazy"></div>
+    <div class="text">
+      <h2>You either get the call, or you get left off the list</h2>
+      <p>This guide is the complete system for building the profile that earns one of those spots: claimed and verified the safe way, filled out in full, kept active month after month. It is written by a home service owner who does this work in his own company, and it holds nothing back.</p>
+      <p>One honest note, because you deserve it up front: this guide does not promise rankings, and you should run from anyone who does. Google decides who shows up where. What you control is whether your profile is complete, accurate, active, and trusted when it does. That is what this system builds.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHAT IS INSIDE ================= -->
+<section class="inside">
+  <div class="wrap">
+    <h2>What is inside</h2>
+    <p class="lede">Every chapter ends in a checklist, so you can work through it a piece at a time.</p>
+    <div class="cards">
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3>Claiming and verification</h3>
+        <p>In the safe order, so your profile never gets flagged or suspended for a setup mistake.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4.5V3h6v1.5"/><path d="M9 11l2 2 4-4"/></svg>
+        <h3>The basics done right the first time</h3>
+        <p>Business name, hours, service area, and the details most profiles get wrong.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M4 8h10M18 8h2M4 16h4M12 16h8"/><circle cx="16" cy="8" r="2"/><circle cx="10" cy="16" r="2"/></svg>
+        <h3>Categories</h3>
+        <p>The setting that decides who sees you, and how to choose yours.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="M3 17l5-4 4 3 4-4 5 5"/></svg>
+        <h3>Services and photos</h3>
+        <p>Built out in full, including the photos that make the phone ring.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M12 4l2.4 4.9 5.4.8-3.9 3.8 1 5.4-4.9-2.6-4.9 2.6 1-5.4L4.2 9.7l5.4-.8L12 4z"/></svg>
+        <h3>Reviews</h3>
+        <p>The engine of the whole profile, with a steady way to earn them and a right way to answer them.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H4l2-3a8 8 0 1 1 15-5z"/><path d="M8.5 11h7M8.5 14h4"/></svg>
+        <h3>Posts and questions</h3>
+        <p>The signs of life that tell homeowners, and Google, the business is active.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+        <h3>The monthly routine</h3>
+        <p>The short recurring work that keeps the profile producing.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24"><path d="M12 4L2.5 20h19L12 4z"/><path d="M12 10v4M12 17.2v.3"/></svg>
+        <h3>The mistakes that get profiles suspended</h3>
+        <p>And how to stay clear of them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BUILT BY AN OWNER ================= -->
+<section>
+  <div class="wrap split flip">
+    <div class="photo"><img src="https://muse.ai/files/1314021691801900/3212440105615550/cc6ouils1ebeea26prxctc09/worker-van.jpg" alt="A tradesperson with a tool belt beside a work van" loading="lazy"></div>
+    <div class="text">
+      <h2>Built by an owner, not an agency</h2>
+      <p>This guide was not written by a marketing firm. It was written by Paul Snider, who owns and runs a home service company in Savannah, Georgia, and built this system in his own business before offering it to anyone else.</p>
+      <p>That difference matters. Agencies sell impressions, reports, and promises nobody can keep. This is an operator's system: one narrow job, done in the right order, with the real workload shown up front and nothing promised that Google controls. Owners talking to owners.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= A FAIR WARNING ================= -->
+<section>
+  <div class="wrap narrative">
+    <h2>A fair warning</h2>
+    <p>This guide does not pretend the work is small. A strong profile is a system, and systems take steady hours. Some owners read this and do it themselves, a little each week. Some read it and decide their time is worth more on the tools. Either way, after this guide you will know exactly what a profile that brings in calls actually takes, and you will be able to judge anyone you hire to do it.</p>
+  </div>
+</section>
+
+<!-- ================= QUESTIONS ================= -->
+<section class="qa">
+  <div class="wrap qa-grid">
+    <h2>Questions owners ask</h2>
+    <div>
+      <div class="qa-item">
+        <h3>"I am not tech savvy."</h3>
+        <p>The guide is written for owners, in plain English, one step at a time. Every chapter ends in a checklist, so you always know the next move.</p>
+      </div>
+      <div class="qa-item">
+        <h3>"Does this trick Google somehow?"</h3>
+        <p>No. Nothing here games the system. Google decides who ranks where. What you control is the quality of your profile: complete, accurate, active, and trusted. Run from anyone who guarantees you the top spot.</p>
+      </div>
+      <div class="qa-item">
+        <h3>"What if I mess up and get my profile suspended?"</h3>
+        <p>That risk is real, and it is exactly why the order matters. The guide sets the profile up in the safe order, and a full chapter covers the mistakes that get profiles suspended, so you can stay clear of them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHO IT IS FOR ================= -->
+<section>
+  <div class="wrap split">
+    <div class="photo"><img src="https://muse.ai/files/1314021691801900/1668677864684820/lhgu6jbttartmgxz7txf9ku8/tradesperson.jpg" alt="A tradesperson at work on a job" loading="lazy"></div>
+    <div class="text">
+      <h2>Who it is for</h2>
+      <p>Owners of home service companies: HVAC, plumbing, electrical, roofing, landscaping, garage doors, pest control, and cleaning. If your work comes from homeowners in a local service area, this was written for you.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOTTOM FORM ================= -->
+<div class="wrap">
+  <div class="bottom">
+    <h2>Get the guide</h2>
+    <div class="form-card">
+      <form class="lead-form" novalidate>
+        <label for="bottom-email">Email</label>
+        <input id="bottom-email" type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+        <div class="row">
+          <div>
+            <label for="bottom-first">First name</label>
+            <input id="bottom-first" type="text" name="first_name" autocomplete="given-name" required>
+          </div>
+          <div>
+            <label for="bottom-last">Last name</label>
+            <input id="bottom-last" type="text" name="last_name" autocomplete="family-name" required>
+          </div>
+        </div>
+        <button type="submit">Send Me the Guide</button>
+      </form>
+      <div class="thanks" role="status">
+        <h3>Your guide is on its way.</h3>
+        <p>Before you search your own business to check where you show up, do it in a private (incognito) window, or through a VPN. A search on your everyday phone is personalized, and it will flatter your own listing.</p>
+      </div>
+    </div>
+    <p class="smallprint">We will email you the guide, plus occasional Google profile tips you can actually use. Unsubscribe anytime. We never sell your information.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="copy">© Hollow &amp; Peak</p>
+  </div>
+</footer>
+
+<script>
+  // Preview behavior: validate the form and swap in the thank-you panel.
+  // Live submissions will post to the list provider when it is wired up.
+  document.querySelectorAll('.lead-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var card = form.closest('.form-card');
+      form.style.display = 'none';
+      card.querySelector('.thanks').style.display = 'block';
+    });
+  });
+</script>
+</body>
+</html>
